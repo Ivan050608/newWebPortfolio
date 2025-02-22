@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="./index.css">
+	<title>Capstone 1</title>
+</head>
+<body>
+
+	<!-- Navbar -->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="#landing">Static Web Portfolio</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+				<div class="navbar-nav ms-auto">
+					<a class="nav-link active" href="#landing">Home</a>
+					<a class="nav-link" href="#projects">Projects</a>
+					<a class="nav-link" href="#contact">Contact</a>
+					<a class="nav-link" href="#tools">Tools</a>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Landing Section -->
+	<div class="container-fluid py-5 text-center" id="landing">
+		<div class="row justify-content-center">
+			<div class="col-md-3 my-4">
+				<img src="./images/me1.jpg" class="img-fluid rounded-circle" alt="Profile Picture">
+			</div>
+			<div class="col-md-7">
+				<h1>Neil Ivanrie M. Acuña</h1>
+				<h3>Front End Web Developer</h3>
+				<p>
+					"Hi, I’m Ivan, a Front-End Web Developer passionate about creating engaging, responsive, and user-friendly web interfaces. I specialize in turning design ideas into functional websites using technologies like HTML, CSS, JavaScript, and frameworks like React. I have a strong eye for design and focus on ensuring seamless user experiences across devices. My goal is to build efficient and visually appealing solutions that align with both user needs and business objectives."
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Projects Section -->
+	<div id="projects" class="container-fluid py-5 bg-light">
+		<h3 class="text-center mb-4">My Projects</h3>
+		<div class="row justify-content-center">
+	
+			<!-- Project 1: Full-Stack E-Commerce App -->
+			<div class="col-12 col-md-4 mb-4">
+				<div class="card shadow-lg">
+					<!-- Bootstrap Carousel -->
+					<div id="ecomCarousel" class="carousel slide" data-bs-ride="carousel">
+						<!-- Indicators -->
+						<div class="carousel-indicators">
+							<button type="button" data-bs-target="#ecomCarousel" data-bs-slide-to="0" class="active"></button>
+							<button type="button" data-bs-target="#ecomCarousel" data-bs-slide-to="1"></button>
+							<button type="button" data-bs-target="#ecomCarousel" data-bs-slide-to="2"></button>
+						</div>
+	
+						<!-- Images -->
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<img src="./images/Ecom1.png" class="d-block w-100" alt="E-Commerce Image 1">
+							</div>
+							<div class="carousel-item">
+								<img src="./images/Ecom2.png" class="d-block w-100" alt="E-Commerce Image 2">
+							</div>
+							<div class="carousel-item">
+								<img src="./images/Ecom3.png" class="d-block w-100" alt="E-Commerce Image 3">
+							</div>
+						</div>
+	
+						<!-- Navigation Arrows -->
+						<button class="carousel-control-prev" type="button" data-bs-target="#ecomCarousel" data-bs-slide="prev">
+							<span class="carousel-control-prev-icon"></span>
+						</button>
+						<button class="carousel-control-next" type="button" data-bs-target="#ecomCarousel" data-bs-slide="next">
+							<span class="carousel-control-next-icon"></span>
+						</button>
+					</div>
+	
+					<!-- Card Body -->
+					<div class="card-body">
+						<h5 class="card-title">Full-Stack E-Commerce App</h5>
+						<p class="card-text">
+							Full-Stack E-Commerce Application
+Developed a fully functional e-commerce platform using MERN (MongoDB, Express.js, React, Node.js). Implemented features including user authentication, product management, shopping cart functionality, and order processing. Designed a dynamic Admin Dashboard for managing users, products, and orders. Integrated Multer for image uploads, ensured secure API communication with JWT authentication. Built a responsive UI with React and connected to a MongoDB database for scalable data storage.
+
+Key Features:
+
+User Authentication: Secure login, registration, and role-based access control
+Product Management: CRUD operations for products, categories, and inventory tracking
+Shopping Cart & Checkout: Dynamic cart, order summary, and secure payment integration
+Admin Dashboard: Centralized management of users, products, and orders
+Image Uploads: Used Multer to handle product images in the backend
+Responsive UI: Built with React and optimized for mobile
+						</p>
+					</div>
+				</div>
+			</div>
+	
+			<!-- Project 2: Blog Platform -->
+			<div class="col-12 col-md-4 mb-4">
+				<div class="card shadow-lg">
+					<div id="blogCarousel" class="carousel slide" data-bs-ride="carousel">
+						<div class="carousel-indicators">
+							<button type="button" data-bs-target="#blogCarousel" data-bs-slide-to="0" class="active"></button>
+							<button type="button" data-bs-target="#blogCarousel" data-bs-slide-to="1"></button>
+							<button type="button" data-bs-target="#blogCarousel" data-bs-slide-to="2"></button>
+						</div>
+	
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<img src="./images/Blog1.png" class="d-block w-100" alt="Blog Image 1">
+							</div>
+							<div class="carousel-item">
+								<img src="./images/Blog2.png" class="d-block w-100" alt="Blog Image 2">
+							</div>
+							<div class="carousel-item">
+								<img src="./images/Blog3.png" class="d-block w-100" alt="Blog Image 3">
+							</div>
+						</div>
+	
+						<button class="carousel-control-prev" type="button" data-bs-target="#blogCarousel" data-bs-slide="prev">
+							<span class="carousel-control-prev-icon"></span>
+						</button>
+						<button class="carousel-control-next" type="button" data-bs-target="#blogCarousel" data-bs-slide="next">
+							<span class="carousel-control-next-icon"></span>
+						</button>
+					</div>
+	
+					<div class="card-body">
+						<h5 class="card-title">Full-Stack Blog App</h5>
+						<p class="card-text">Designed and developed a full-stack blog platform using MERN (MongoDB, Express.js, React, Node.js). Implemented features including user authentication, post creation/editing, commenting system, and an admin dashboard for managing blog content. Ensured a responsive and user-friendly UI with React and Tailwind CSS. Integrated Multer for image uploads and secured API routes with JWT authentication. Implemented role-based access control for user and admin functionalities.</p>
+					</div>
+				</div>
+			</div>
+	
+			<!-- Project 3: Online Booking System -->
+			<div class="col-12 col-md-4 mb-4">
+				<div class="card shadow-lg">
+					<div id="webCarousel" class="carousel slide" data-bs-ride="carousel">
+						<div class="carousel-indicators">
+							<button type="button" data-bs-target="#webCarousel" data-bs-slide-to="0" class="active"></button>
+							<button type="button" data-bs-target="#webCarousel" data-bs-slide-to="1"></button>
+							<button type="button" data-bs-target="#webCarousel" data-bs-slide-to="2"></button>
+						</div>
+	
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<img src="./images/Web1.png" class="d-block w-100" alt="Booking Image 1">
+							</div>
+							<div class="carousel-item">
+								<img src="./images/Web2.png" class="d-block w-100" alt="Booking Image 2">
+							</div>
+							<div class="carousel-item">
+								<img src="./images/Web3.png" class="d-block w-100" alt="Booking Image 3">
+							</div>
+						</div>
+	
+						<button class="carousel-control-prev" type="button" data-bs-target="#bookingCarousel" data-bs-slide="prev">
+							<span class="carousel-control-prev-icon"></span>
+						</button>
+						<button class="carousel-control-next" type="button" data-bs-target="#webCarousel" data-bs-slide="next">
+							<span class="carousel-control-next-icon"></span>
+						</button>
+					</div>
+	
+					<div class="card-body">
+						<h5 class="card-title">Online Static APP HTML CSS</h5>
+						<p class="card-text">Designed and developed a responsive static website using HTML and CSS to showcase content in a clean and visually appealing manner. Implemented a modern layout with flexbox and grid, ensuring compatibility across devices. Optimized performance with efficient CSS styling and semantic HTML structure for better accessibility and SEO. Integrated CSS animations and transitions to enhance user experience.</p>
+					</div>
+				</div>
+			</div>
+	
+		</div>
+	</div>
+	
+
+	<!-- Tools Section -->
+	<div id="tools" class="container-fluid py-5 text-center">
+		<h3>Tools I Use</h3>
+		<div class="row justify-content-center">
+			<div class="col-md-4 p-4">
+				<h4>Front End</h4>
+				<img width="150" src="./images/html5.png" class="img-fluid">
+				<img width="150" src="./images/css3.png" class="img-fluid">
+				<img width="150" src="./images/boot.png" class="img-fluid">
+				<img width="150" src="./images/js.png" class="img-fluid">
+			</div>
+			<div class="col-md-4 p-4">
+				<h4>MERN</h4>
+				<img width="150" src="./images/mongo.png" class="img-fluid">
+				<img width="150" src="./images/expjs.png" class="img-fluid">
+				<img width="150" src="./images/react.png" class="img-fluid">
+				<img width="150" src="./images/nodejs.png" class="img-fluid">
+			</div>
+			<div class="col-md-4 p-4">
+				<h4>Other Tools</h4>
+				<img width="150" src="./images/sublime.png" class="img-fluid">
+				<img width="150" src="./images/postman.png" class="img-fluid">
+				<img width="150" src="./images/cisco.png" class="img-fluid">
+			</div>
+		</div>
+	</div>
+
+	<!-- Contact Section -->
+	<div id="contact" class="container-fluid py-5 text-center bg-light">
+		<h3>Contact</h3>
+		<div class="my-3">
+			<a href="https://www.facebook.com/" target="_blank">
+				<img width="60" src="./images/fb.png" class="img-fluid">
+			</a>
+			<a href="https://github.com/Ivan050608" target="_blank">
+				<img width="60" src="./images/git.png" class="img-fluid">
+			</a>
+			<a href="https://www.linkedin.com/in/neil-ivanrie-acu%C3%B1a-559534290/" target="_blank">
+				<img width="60" src="./images/linkedIn.png" class="img-fluid">
+			</a>
+		</div>
+		<div class="row justify-content-center">
+			<div class="col-md-6">
+				<h4>My Location</h4>
+				<iframe class="w-100" height="300" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d240.9148320379666!2d120.94824483906201!3d14.957286444312668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sph!4v1734407088257!5m2!1sen!2sph"></iframe>
+			</div>
+			<div class="col-md-6">
+				<h4>Leave a Message</h4>
+				<form id="contact-form">
+					<div class="mb-3">
+						<label>Full Name</label>
+						<input type="text" class="form-control">
+					</div>
+					<div class="mb-3">
+						<label>Email Address</label>
+						<input type="email" class="form-control">
+					</div>
+					<div class="mb-3">
+						<label>Message</label>
+						<textarea class="form-control" rows="5"></textarea>
+					</div>
+					<button type="submit" class="btn btn-outline-primary w-100">Send</button>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<!-- Footer -->
+	<footer class="bg-dark text-center text-white py-3">
+		<div>Ivan Acuna | Web Development Portfolio</div>
+		<div>&copy; All Rights Reserved</div>
+	</footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
