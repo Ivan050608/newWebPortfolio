@@ -1,103 +1,107 @@
-* {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
-	font-family: 'Poppins', sans-serif;
-}
-
-.navbar {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
-.navbar-dark {
-    background-color: #1a1a2e !important;
-}
-
-
-/* Body background color */
+/* General Styles */
 body {
-	background-color: #ecf0f1; /* Light gray background for the body */
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
 }
 
-/* General text styles */
-h1, h3, h5 {
-	font-family: Poppins;
-	text-align: center;
-	font-size: 24px;
-	font-weight: 700;
-	line-height: 32px;
-	color: #2c3e50; /* Dark text color */
+/* Navbar */
+.navbar {
+    background-color: #212529 !important;
 }
 
-p, label {
-	font-family: Poppins;
-	font-size: 16px;
-	font-weight: 500;
-	line-height: 24px;
-	color: #2c3e50; /* Dark text color */
+.navbar-brand {
+    font-weight: bold;
 }
 
-footer {
-	background: rgba(0, 51, 99, 1);
-	color: white;
-	padding: 10px 0;
+.nav-link {
+    color: #ffffff !important;
 }
 
-iframe {
-	width: 50vw;
-	height: 50vh;
-	border: 0;
+.nav-link:hover {
+    color: #00A8E8 !important;
 }
 
-.background {
-	height: 25%;
-}
-
-/* Background colors for different sections */
+/* Landing Section */
 #landing {
-	background-color: #dfe6e9; /* Light Gray */
-	color: #2c3e50; /* Dark text */
-	padding: 40px 0;
+    background-color: #ffffff;
+    padding: 60px 20px;
+    animation: fadeIn 1.5s ease-in-out;
 }
 
-#projects {
-	background-color: #dcdde1; /* Soft Gray */
-	color: #2c3e50; /* Dark text */
-	padding: 40px 0;
+/* Profile Image */
+.profile-img {
+    transition: transform 0.3s ease-in-out;
 }
 
-#tools {
-	background-color: #dfe4ea; /* Light Grayish Blue */
-	color: #2c3e50; /* Dark text */
-	padding: 40px 0;
+.profile-img:hover {
+    transform: scale(1.1);
 }
 
-#contact {
-	background-color: #dcdde1; /* Soft Gray */
-	color: #2c3e50; /* Dark text */
-	padding: 40px 0;
+/* Projects Section */
+.card {
+    border: none;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .card:hover {
-    transform: translateY(-5px);
+    transform: scale(1.05);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #004080;
+    border-color: #004080;
+    color: #ffffff;
+    font-weight: bold;
     transition: all 0.3s ease-in-out;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-section {
-    padding: 60px 0;
+.btn-primary:hover {
+    background-color: #003060;
+    border-color: #003060;
 }
 
-.form-control {
-    border-radius: 10px;
-    border: 1px solid #ccc;
-    padding: 12px;
+.btn-dark {
+    background-color: #212529;
+    border-color: #212529;
+    transition: all 0.3s ease-in-out;
 }
 
+.btn-dark:hover {
+    background-color: #343a40;
+    border-color: #343a40;
+}
+
+/* Contact Section */
+#contact {
+    background-color: #f8f9fa;
+    padding: 50px 20px;
+}
+
+#contact-form {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
 footer {
-    text-align: center;
+    background-color: #212529;
+    color: white;
     padding: 15px;
 }
 
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
