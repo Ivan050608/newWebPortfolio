@@ -131,26 +131,11 @@ footer {
     height: 400px; /* Adjust the height as needed */
 }
 
-.collage-img {
-    position: absolute;
-    width: 40%; /* Adjust the size of the images */
-    top: 20%;
-    left: 10%;
-    transform: rotate(-10deg); /* Add a slight rotation for a more random effect */
-    z-index: 1;
-}
+#graphic-design-carousel {
+    max-width: 900px;
+    margin: 0 auto;
+  }
 
-.collage-img:nth-child(2) {
-    left: 50%;
-    top: 30%;
-    transform: rotate(5deg);
-}
-
-.collage-img:nth-child(3) {
-    left: 30%;
-    top: 10%;
-    transform: rotate(15deg);
-}
 
 /* Animations */
 /* @keyframes fadeIn {
