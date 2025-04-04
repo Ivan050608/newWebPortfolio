@@ -1,4 +1,10 @@
 /* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f8f9fa;
@@ -87,6 +93,32 @@ body {
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
 }
 
+/* Design Section Carousel Images */
+.design-img {
+    max-height: 500px;
+    object-fit: contain;
+    width: 100%;
+    background-color: #ffffff; /* Optional: for padding areas */
+    padding: 10px; /* Optional: some space around images */
+}
+
+@media (max-width: 768px) {
+    .design-img {
+        max-height: 350px;
+    }
+}
+
+@media (max-width: 576px) {
+    .design-img {
+        max-height: 250px;
+    }
+}
+.tool-img {
+    transition: transform 0.3s ease-in-out;
+}
+.tool-img:hover {
+    transform: scale(1.1);
+}
 /* Footer */
 footer {
     background-color: #212529;
@@ -95,7 +127,7 @@ footer {
 }
 
 /* Animations */
-@keyframes fadeIn {
+/* @keyframes fadeIn {
     from {
         opacity: 0;
         transform: translateY(-20px);
@@ -104,4 +136,4 @@ footer {
         opacity: 1;
         transform: translateY(0);
     }
-}
+} */
